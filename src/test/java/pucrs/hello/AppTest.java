@@ -12,5 +12,11 @@ public class AppTest {
     	String actual = App.getSaudacao();
         assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testGetSaudacaoIniciaComO() {
+    	String actual = App.getSaudacao();
+        assertTrue(actual.startsWith("O"));
+	}
 
 }
